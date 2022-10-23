@@ -8,9 +8,6 @@ export const DataProvider = ({children}) => {
     const [data, setData] = useState([])
     const [filtered, setFiltered] = useState([])
     const [activeAge, setActiveAge] = useState("All")
-    const [isActive, setIsActive] = useState(false)
-
-
 
     useEffect(() => {
         fetchData()

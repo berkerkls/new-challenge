@@ -64,6 +64,10 @@
         font-size: 1.5rem;
     }
 
+    .btn.active {
+      background-color: #acabab;
+    }
+
     button {
         padding: 10px 20px;
         border: 1px solid #444;
@@ -71,9 +75,12 @@
         font-weight: bold;
         cursor: pointer;
 
-        &:hover {
+        &:hover,
+        &:focus {
             background-color: #acabab;
         }
+
+       
     }
 
     .slider-input {

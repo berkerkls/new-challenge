@@ -1,11 +1,11 @@
 import React from 'react'
 import { useEffect } from 'react'
-import { useContext } from 'react'
-import DataContext from '../context/DataContext'
+
 
 
 
 function Age({all, setFiltered, activeAge, setActiveAge}) {
+  
 
 
   useEffect(() => {

@@ -9,7 +9,7 @@ import { useContext } from 'react'
 function Units() {
 
   const {data, filtered, setFiltered,
-  activeAge, setActiveAge, handleClick} = useContext(DataContext)
+  activeAge, setActiveAge} = useContext(DataContext)
 
 
   return (
