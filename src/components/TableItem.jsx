@@ -1,12 +1,12 @@
 import React from 'react'
 import {NavLink} from "react-router-dom"
+import {useState} from "react"
+import { useEffect } from 'react'
 
 
 function TableItem({item}) {
     const costs = JSON.stringify(item.cost)
 
-
-    console.log(costs)
   return (     
                     <tr>
                         <NavLink className="link" to={`${item.id}`}>{item.id}</NavLink>

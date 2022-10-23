@@ -13,7 +13,9 @@ function UnitItem() {
     
     const [singleUnit, setSingleUnit] = useState([])
     
+    // I couldn't get the Wood, Food or Gold quantity by "singleUnit.cost.Wood"
     const costs = JSON.stringify(singleUnit.cost)
+
 
     useEffect(() => {
         fetchUnit()
