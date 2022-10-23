@@ -3,6 +3,7 @@ import Units from "./pages/Units";
 import "./components/style.scss"
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
 import {DataProvider} from "./context/DataContext"
+import UnitItem from "./pages/UnitItem";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/units" exact element={<Units />} />
+        <Route path="/units/:id" element={<UnitItem/>} />
       </Routes>
     </Router>
     </DataProvider>

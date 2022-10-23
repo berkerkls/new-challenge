@@ -17,6 +17,7 @@ export const DataProvider = ({children}) => {
         const data = await res.json()
 
         setData(data)
+        console.log(data)
     }
 
 

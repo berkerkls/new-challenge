@@ -1,13 +1,19 @@
 import React from 'react'
+import {NavLink} from "react-router-dom"
+
 
 function TableItem({item}) {
-  return (  
-                <tr>
-                    <td>{item.id}</td>
-                    <td>{item.name}</td>
-                    <td>{item.age}</td>
-                    <td><span>Wood: </span>, <span>Gold: </span></td>
-                </tr>
+    const costs = JSON.stringify(item.cost)
+
+
+    console.log(costs)
+  return (     
+                    <tr>
+                        <NavLink className="link" to={`${item.id}`}>{item.id}</NavLink>
+                        <td>{item.name}</td>
+                        <td>{item.age}</td>
+                        <td className='gold-wood'>{costs !=null ? costs : "There is no costs"}</td>
+                    </tr>
   )
 }
 
